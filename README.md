@@ -24,6 +24,16 @@
 4 - resetto il valore dello scermo
 
 ### Milestone 3 svolgimento
-
 1 - Aggiungo event listener all = 
+2 - Salvo il secondo operando
+3 - Creo le condizioni per cui determinate operazioni si attuano
+4 - stampo il risultato
 
+#### Milestone 4 svolgimento
+1 - Prelevo il tasto C dalla calcolatrice
+2 - Al click di C lo schermo diventa stringa vuota e l'operatore salvato nella variabile cliccata si resetta con esso
+
+### Bonus 
+1 - creo un'altra condizione oltre a quelle delle operazione sempre quando si clicca uguale
+2 - Se il numero del secondo opertore è uguale a zero e se l'operatore cliccato è quello della divisione 
+    allora scritta error

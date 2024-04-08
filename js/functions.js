@@ -47,6 +47,9 @@ function equalClicked (){
         result = parseInt(firstOperando / secondOperando)
     }
 
+    if (operator === "÷" && secondOperando === 0) {
+        result = "ERROR"
+    }
     screen.innerHTML = result
 };
 
@@ -54,11 +57,7 @@ function equalClicked (){
 function resetClicked (){
     // console.log(this);
     let resetValue = this.innerHTML
-    console.log(resetValue);
+    // console.log(resetValue);
     screen.innerHTML = ""
     operator = ""
 };
-
-
-
-// Se l'inner html di screen è + allora firstOperando + secondOperando
