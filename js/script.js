@@ -1,15 +1,15 @@
 // PICK ELEMENTS FROM DOM
 // numbers
 const numbers = document.getElementsByClassName("buttonsgrey");
-console.log(numbers);
+// console.log(numbers);
 
 // result
 const resultButton = document.getElementById("equal");
-console.log(resultButton);
+// console.log(resultButton);
 
 // screen
-const screen = document.getElementById("numberDisplay");
-console.log(screen);
+let screen = document.getElementById("numberDisplay");
+// console.log(screen);
 
 // operators
 const operators = document.getElementsByClassName("buttonsgreen")
@@ -17,7 +17,7 @@ console.log(operators);
 
 // reset
 const reset = document.getElementById("reset")
-console.log(reset);
+// console.log(reset);
 
 
 // ASSIGN WITH FOR CYCLE EACH ELEMENT EVENT LISTENER

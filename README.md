@@ -20,3 +20,5 @@
 ### Milestone 2 svolgimento
 1 - Prelevo gli operatori dall'html
 2 - Aggiungo l'event listener
+3 - salvo il valore che ho nello screen
+4 - resetto il valore dello scermo 
