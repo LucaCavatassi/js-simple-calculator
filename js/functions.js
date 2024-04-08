@@ -9,11 +9,45 @@ function buttonClicked (){
     screen.innerHTML += buttonNumber;
 };
 
+// SAVE NUMBER AND APPLY ITS INNERHTML OPERATOR
+function operatorsClicked () {
+    // console.log(this);
+    let firstOperando = parseInt(screen.innerHTML);
+    console.log(firstOperando, typeof firstOperando);
+    screen.innerHTML = this.innerHTML;
+
+    // salvo operatore cliccato in una variabile
+    let operator
+    if (this.innerHTML === "+"){
+        operator = "+";
+    } else if (this.innerHTML === "-"){
+        operator = "-";
+    } else if (this.innerHTML === "x"){
+        operator = "x";
+    } else if (this.innerHTML === "÷"){
+        operator = "÷";
+    } 
+    
+} 
+
 // GIVE RESULT
 function equalClicked (){
     // console.log(this);
-    let equalValue =  this.innerHTML
-    console.log(equalValue);
+    let secondOperando = parseInt(screen.innerHTML);
+    console.log(secondOperando, typeof secondOperando);
+
+    let result;
+    if (operator = "+") {
+        result = firstOperando + secondOperando
+    } else if (operator = "-") {
+        result = firstOperando - secondOperando
+    } else if (operator = "x") {
+        result = firstOperando * secondOperando
+    } else if (operator = "÷") {
+        result = firstOperando / secondOperando
+    }
+
+    screen.innerHTML = result
 };
 
 // RESET THE SCREEN
@@ -24,12 +58,6 @@ function resetClicked (){
     screen.innerHTML = ""
 };
 
-// SAVE NUMBER AND APPLY ITS INNERHTML OPERATOR
-function operatorsClicked () {
-    // console.log(this);
-    let firstOperando = parseInt(screen.innerHTML);
-    console.log(firstOperando);
-    screen.innerHTML = this.innerHTML;
-}
+
 
 // Se l'inner html di screen è + allora firstOperando + secondOperando
