@@ -12,6 +12,11 @@
 ### BONUS
 > verificare che non si stia cercando di dividere per 0
 
-### Mileston 1 svolgimento
+### Milestone 1 svolgimento
 1 - Prelevo i bottoni dall'html 
+2 - Aggiungo l'event listener
+3 - Al click del bottone il numero contenuto nello span cliccato deve essere stampato nello schermo
+
+### Milestone 2 svolgimento
+1 - Prelevo gli operatori dall'html
 2 - Aggiungo l'event listener
