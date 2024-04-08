@@ -9,15 +9,15 @@ function buttonClicked (){
     screen.innerHTML += buttonNumber;
 };
 
+let firstOperando;
+let sum;
 // SAVE NUMBER AND APPLY ITS INNERHTML OPERATOR
 function operatorsClicked () {
     // console.log(this);
-    let firstOperando = parseInt(screen.innerHTML);
+    firstOperando = parseInt(screen.innerHTML);
     console.log(firstOperando, typeof firstOperando);
     screen.innerHTML = this.innerHTML;
-
-    // salvo operatore cliccato in una variabile
-    let operator
+    // // salvo operatore cliccato in una variabile
     if (this.innerHTML === "+"){
         operator = "+";
     } else if (this.innerHTML === "-"){
@@ -37,14 +37,14 @@ function equalClicked (){
     console.log(secondOperando, typeof secondOperando);
 
     let result;
-    if (operator = "+") {
-        result = firstOperando + secondOperando
-    } else if (operator = "-") {
-        result = firstOperando - secondOperando
-    } else if (operator = "x") {
-        result = firstOperando * secondOperando
-    } else if (operator = "÷") {
-        result = firstOperando / secondOperando
+    if (operator === "+") {
+        result = parseInt(firstOperando + secondOperando)
+    } else if (operator === "-") {
+        result = parseInt(firstOperando - secondOperando)
+    } else if (operator === "x") {
+        result = parseInt(firstOperando * secondOperando)
+    } else if (operator === "÷") {
+        result = parseInt(firstOperando / secondOperando)
     }
 
     screen.innerHTML = result
@@ -53,9 +53,10 @@ function equalClicked (){
 // RESET THE SCREEN
 function resetClicked (){
     // console.log(this);
-    let resetValue =  this.innerHTML
+    let resetValue = this.innerHTML
     console.log(resetValue);
     screen.innerHTML = ""
+    operator = ""
 };
 
 
