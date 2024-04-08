@@ -1,7 +1,7 @@
 // PRINT NUMBER IN THE SCREEN
 function buttonClicked (){
     let buttonNumber = this.innerHTML;
-    if (screen.innerHTML === "0" || screen.innerHTML === "+" || screen.innerHTML === "-" || screen.innerHTML === "×" || screen.innerHTML === "÷"){
+    if (screen.innerHTML === "0" || screen.innerHTML === "+" || screen.innerHTML === "-" || screen.innerHTML === "x" || screen.innerHTML === "÷"){
         screen.innerHTML = "";
     }
     // console.log(this);
