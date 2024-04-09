@@ -27,7 +27,7 @@ function operatorsClicked () {
     } else if (this.innerHTML === "÷"){
         operator = "÷";
     } 
-    
+    console.log(operator);
 } 
 
 // GIVE RESULT
@@ -51,6 +51,7 @@ function equalClicked (){
         result = "ERROR"
     }
     screen.innerHTML = result
+    console.log(result);
 };
 
 // RESET THE SCREEN
