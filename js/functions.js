@@ -59,6 +59,6 @@ function resetClicked (){
     // console.log(this);
     let resetValue = this.innerHTML
     // console.log(resetValue);
-    screen.innerHTML = ""
+    screen.innerHTML = "0"
     operator = ""
 };
